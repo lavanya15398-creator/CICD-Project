@@ -73,8 +73,11 @@
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.10.0.2594</version>
             </plugin>
-         <!-- ✅ Nexus Deploy Plugin -->
-         <plugin>
+         <build>
+            <finalName>MyWebApp</finalName>
+        <plugins>
+        <!-- ✅ Nexus Deploy Plugin -->
+        <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-deploy-plugin</artifactId>
             <version>3.1.1</version>
@@ -83,7 +86,7 @@
                 <url>http://3.110.171.196:8081/repository/cicd/</url>
             </configuration>
         </plugin>
-        </plugins>
-    </build>
-
+    </plugins>
+</build>
 </project>
+
